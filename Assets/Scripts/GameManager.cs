@@ -118,7 +118,7 @@ public class GameManager : MonoBehaviour
     public void NoteMissed()
     {
         Debug.Log("Hit Missed");
-        vida -= 15;
+        vida -= 20;
         currentMultiplier = 1;
         multiplierTracker = 0;
         multiText.text = "Multiplier: " + currentMultiplier;
