@@ -20,6 +20,11 @@ public class GameManager : MonoBehaviour
     public int scorePerNote;
     public int scorePerGoodNote;
     public int scorePerPerfectNote;
+    public int vida;
+    public int duracion;
+
+    public Slider vidaSlider;
+    public Slider duracionSlider;
 
     public int currentMultiplier;
     public int multiplierTracker;
@@ -31,8 +36,10 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        duracionSlider.maxValue = music.clip.length;
+        duracionSlider.value = 0;
         instance = this;
-
+        vida = 100;
         scoreText.text = "Score: 0";
         currentMultiplier = 1;
         multiplierTracker = 0;
@@ -41,6 +48,17 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        duracionSlider.value = music.time;
+        Debug.Log(music.time);
+        vidaSlider.value = vida;
+        if(vida > 100)
+        {
+            vida = 100;
+        }
+        if (vida <= 0)
+        {
+            GameOver();
+        }
         if(!startPlaying)
         {
             if(Input.GetKeyDown(startKey))
@@ -52,22 +70,30 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
+    public void GameOver()
+    {
+        beatCont.hasStarted = false;
+        pjCont.active = false;
+        music.Stop();
+    }
     public void NormalHit()
     {
         currentScore += scorePerNote * currentMultiplier;
+        vida += 5;
         NoteHit();
     }
 
     public void GoodHit()
     {
         currentScore += scorePerGoodNote * currentMultiplier;
+        vida += 10;
         NoteHit();
     }
 
     public void PerfectHit()
     {
         currentScore += scorePerPerfectNote * currentMultiplier;
+        vida += 15;
         NoteHit();
     }
 
@@ -92,6 +118,7 @@ public class GameManager : MonoBehaviour
     public void NoteMissed()
     {
         Debug.Log("Hit Missed");
+        vida -= 20;
         currentMultiplier = 1;
         multiplierTracker = 0;
         multiText.text = "Multiplier: " + currentMultiplier;

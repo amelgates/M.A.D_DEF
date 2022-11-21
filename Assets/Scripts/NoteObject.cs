@@ -44,6 +44,10 @@ public class NoteObject : MonoBehaviour
         {
             canBePressed = true;
         }
+        if(other.tag == "Barrier")
+        {
+            gameObject.SetActive(false);
+        }
     }
     private void OnTriggerExit(Collider other)
     {
