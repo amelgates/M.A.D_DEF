@@ -14,5 +14,8 @@ public class Menudeinicio : MonoBehaviour
         Application.Quit();
         Debug.Log("Game closed");
     }
-
+    public void CreditsGame()
+    {
+        SceneManager.LoadScene("Creditos");
+    }
 }
