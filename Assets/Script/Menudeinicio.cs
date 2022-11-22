@@ -7,7 +7,7 @@ public class Menudeinicio : MonoBehaviour
 {
      public void StartGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Mecanica");
     }
      public void ExitButton()
     {
