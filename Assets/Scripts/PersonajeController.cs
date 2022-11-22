@@ -10,6 +10,7 @@ public class PersonajeController : MonoBehaviour
     public Vector3 estado3;
     public Transform playerTransform;
     public bool active;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -22,15 +23,21 @@ public class PersonajeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(active)
+        if (active)
         {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                animator.SetBool("Punch", true);
+            }
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 estado++;
+                animator.SetBool("MoverArriba", true);
             }
             if (Input.GetKeyDown(KeyCode.DownArrow))
             {
                 estado--;
+                animator.SetBool("MoverAbajo", true);
             }
             if (estado < 1)
             {

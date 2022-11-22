@@ -6,14 +6,12 @@ public class NoteObject : MonoBehaviour
 {
     public bool canBePressed;
     public KeyCode keyToPress;
-
-
     // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(keyToPress))
         {
-            if(canBePressed)
+            if (canBePressed)
             {
                 gameObject.SetActive(false);
 
