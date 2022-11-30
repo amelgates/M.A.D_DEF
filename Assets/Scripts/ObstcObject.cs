@@ -6,7 +6,7 @@ public class ObstcObject : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Activator")
+        if (other.tag == "Player")
         {
             GameManager.instance.NoteMissed();
             gameObject.SetActive(false);

@@ -22,6 +22,10 @@ public class GameManager : MonoBehaviour
     public int scorePerPerfectNote;
     public int vida;
     public int duracion;
+    public int notasMaX;
+    public float notasReal;
+    public float porcentaje;
+    public int currentCombo;
 
     public Slider vidaSlider;
     public Slider duracionSlider;
@@ -32,6 +36,8 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI multiText;
+    public TextMeshProUGUI porcentajeText;
+    public TextMeshProUGUI comboText;
 
     // Start is called before the first frame update
     void Start()
@@ -79,6 +85,8 @@ public class GameManager : MonoBehaviour
     public void NormalHit()
     {
         currentScore += scorePerNote * currentMultiplier;
+        notasMaX++;
+        notasReal += 0.5f;
         vida += 5;
         NoteHit();
     }
@@ -86,6 +94,8 @@ public class GameManager : MonoBehaviour
     public void GoodHit()
     {
         currentScore += scorePerGoodNote * currentMultiplier;
+        notasMaX++;
+        notasReal += 0.75f;
         vida += 10;
         NoteHit();
     }
@@ -93,6 +103,8 @@ public class GameManager : MonoBehaviour
     public void PerfectHit()
     {
         currentScore += scorePerPerfectNote * currentMultiplier;
+        notasMaX++;
+        notasReal++;
         vida += 15;
         NoteHit();
     }
@@ -110,17 +122,42 @@ public class GameManager : MonoBehaviour
                 currentMultiplier++;
             }
         }
+        currentCombo++;
+        porcentaje = Mathf.RoundToInt(notasReal / notasMaX) * 100;
         multiText.text = "Multiplier: " + currentMultiplier;
-        //currentScore += scorePerNote * currentMultiplier;
         scoreText.text = "Score: " + currentScore;
+        comboText.text = "Combo: " + currentCombo;
     }
 
     public void NoteMissed()
     {
         Debug.Log("Hit Missed");
         vida -= 20;
+        currentCombo = 0;
         currentMultiplier = 1;
         multiplierTracker = 0;
+        notasMaX++;
         multiText.text = "Multiplier: " + currentMultiplier;
+        comboText.text = "Combo: " + currentCombo;
+    }
+
+    public void AjustPorcentaje()
+    {
+        if(porcentaje == 100)
+        {
+
+        }
+        else if(89 < porcentaje)
+        {
+
+        }
+        else if (79 < porcentaje)
+        {
+
+        }
+        else
+        {
+
+        }
     }
 }
