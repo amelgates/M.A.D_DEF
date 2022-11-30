@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Creditos.unity
     guid: 7c8ade721635fad4bb0a76f1fff58f1c
   - enabled: 1
-    path: Assets/Scenes/Mecanica.unity
+    path: Assets/Scenes/Cancion1.unity
     guid: 4f2fdafa5000e374daee8af13df743ef
   m_configObjects: {}

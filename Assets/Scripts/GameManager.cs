@@ -36,7 +36,6 @@ public class GameManager : MonoBehaviour
 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI multiText;
-    public TextMeshProUGUI porcentajeText;
     public TextMeshProUGUI comboText;
 
     // Start is called before the first frame update
