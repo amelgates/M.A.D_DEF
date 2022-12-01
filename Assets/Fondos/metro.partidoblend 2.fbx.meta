@@ -3,7 +3,87 @@ guid: 4574b92cfa6c1bf4ab3cc49e3aafff07
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 53b7f5b59f6f92a4086b2af10c0c82fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 74d0f5aa1aabe13498ad9572aead6cde, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.009
+    second: {fileID: 2100000, guid: 5721fa72421dc9349966b40242c91637, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: amarillo
+    second: {fileID: 2100000, guid: 6d45732b46a56824fa7ca154cc2a613b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: grispared
+    second: {fileID: 2100000, guid: d4c9d20995784ac448ccf1a7e9dc1884, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: luz
+    second: {fileID: 2100000, guid: ea4087be9e9b6cf419b3b3fc9ea06ced, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: luz.001
+    second: {fileID: 2100000, guid: 6f6acb90ab6756b4ea7e3c0331b847f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: luz.002
+    second: {fileID: 2100000, guid: 86a08a9cf3c65f545984c2e2972caf7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: negro.013
+    second: {fileID: 2100000, guid: 4493355b3a9593d46bec9b59fdd20a49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: negro.017
+    second: {fileID: 2100000, guid: c344423c83108bd4d9eab0cd495914ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: negro.018
+    second: {fileID: 2100000, guid: 49dc0f9430d0a1641b0236009c508ae7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: puertacafe
+    second: {fileID: 2100000, guid: f192ca87f7e49464998de284f6d002a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rejas
+    second: {fileID: 2100000, guid: 813c4c08ba386da4180cc0aeb16868e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vidrio.012
+    second: {fileID: 2100000, guid: becfadb27c050044396b2933e141a86b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vidrio.017
+    second: {fileID: 2100000, guid: f0555acecea96384586f774c40232cbf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vidrio.018
+    second: {fileID: 2100000, guid: bd5cf4eae0a8f6444ba84719c535a8e9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

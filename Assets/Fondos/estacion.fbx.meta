@@ -3,7 +3,62 @@ guid: 960a45835674e7749b08b74ebf13a2b3
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Magris
+    second: {fileID: 2100000, guid: 1d5ba897e09ef3345bdc753fa2af6318, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: ce62ac7f6b270ea41b60964865b7c5ae, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.005
+    second: {fileID: 2100000, guid: a2bbacaeb90100144a5efaabf32f4232, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.007
+    second: {fileID: 2100000, guid: 35704ecd826febf419a5de8f3f9aba33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.014
+    second: {fileID: 2100000, guid: 4d40589a43cc6004eb7d2afa68193aa8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.026
+    second: {fileID: 2100000, guid: 4c879071fc383e448adcf11cba835fe0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cafe
+    second: {fileID: 2100000, guid: 9b474fabc39e3b2459883a0405b24d70, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gris
+    second: {fileID: 2100000, guid: 950f12375749fe742a6d827eaece78a7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: linea
+    second: {fileID: 2100000, guid: f706c69659b9c39438c3d8cdd09d6ec7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: verdeclaro
+    second: {fileID: 2100000, guid: 99e5aacfd8337724584940440f83aade, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: verdeoscuro
+    second: {fileID: 2100000, guid: 8cc503793ab7d244798e49fdcefdbbe3, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
