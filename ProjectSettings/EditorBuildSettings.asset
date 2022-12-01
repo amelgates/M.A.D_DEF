@@ -17,4 +17,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cancion1.unity
     guid: 4f2fdafa5000e374daee8af13df743ef
+  - enabled: 1
+    path: Assets/Scenes/Cancion2.unity
+    guid: e8d4d6abdd60d9f49944bc28915b0937
+  - enabled: 1
+    path: Assets/Scenes/Cancion3.unity
+    guid: 290b9f8a0632526419764bc3ceff25db
+  - enabled: 1
+    path: Assets/Scenes/Final1.unity
+    guid: 90f3892979f3b214e96e18ae18ba8cd8
+  - enabled: 1
+    path: Assets/Scenes/Final2.unity
+    guid: 4bcd3dfea09daad46a314f69f7d496f0
   m_configObjects: {}

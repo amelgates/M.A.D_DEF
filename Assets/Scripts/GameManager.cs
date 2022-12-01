@@ -12,12 +12,18 @@ public class GameManager : MonoBehaviour
     public AudioSource music;
 
     public bool startPlaying;
+    public bool isPlaying;
+    public bool inOptions;
 
     public BeatController beatCont;
     public PersonajeController pjCont;
     public static GameManager instance;
 
-    public GameObject normalEffect, goodEffect, perfectEffect, missEffect;
+    public GameObject normalEffect, goodEffect, perfectEffect, missEffect, valeria, vicente, inicio, inGame, opciones, resultados, gameOver;
+
+    public Sprite S, A, B, C;
+
+    public Image imagenRango;
 
     public int currentScore;
     public int scorePerNote;
@@ -33,6 +39,7 @@ public class GameManager : MonoBehaviour
     public int goods;
     public int normals;
     public int misses;
+    public string rango;
 
     public Slider vidaSlider;
     public Slider duracionSlider;
@@ -44,10 +51,15 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI multiText;
     public TextMeshProUGUI comboText;
-
+    public TextMeshProUGUI perfText, goodText, normalText, missText;
+    
     // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
+        inOptions = false;
+        startPlaying = false;
+        isPlaying = false;
+        rango = null;
         notasMaX = 0;
         notasReal = 0;
         perfects = 0;
@@ -64,8 +76,21 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score: 0";
         currentMultiplier = 1;
         multiplierTracker = 0;
+        
     }
-
+    public void SetPlayer()
+    {
+        if(DataManager.instance.personaje == 1)
+        {
+            vicente.SetActive(true);
+            valeria.SetActive(false);
+        }
+        if (DataManager.instance.personaje == 2)
+        {
+            vicente.SetActive(false);
+            valeria.SetActive(true);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -83,11 +108,32 @@ public class GameManager : MonoBehaviour
         {
             if(Input.GetKeyDown(startKey))
             {
-                startPlaying = true;
-                beatCont.hasStarted = true;
-                pjCont.active = true;
-                music.Play();
+                Comenzar();
             }
+        }
+        if(isPlaying)
+        {
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (inOptions)
+                {
+                    opciones.SetActive(false);
+                    beatCont.hasStarted = true;
+                    pjCont.active = true;
+                    music.UnPause();
+                }
+                if(!inOptions)
+                {
+                    opciones.SetActive(true);
+                    music.Pause();
+                    beatCont.hasStarted = false;
+                    pjCont.active = false;
+                }
+            }
+        }
+        if( Mathf.Abs(music.time - music.clip.length) <= 0.1f)
+        {
+            AjustPorcentaje();
         }
     }
     public void GameOver()
@@ -95,6 +141,8 @@ public class GameManager : MonoBehaviour
         beatCont.hasStarted = false;
         pjCont.active = false;
         music.Stop();
+        isPlaying = false;
+        gameOver.SetActive(true);
     }
     public void NormalHit()
     {
@@ -168,19 +216,40 @@ public class GameManager : MonoBehaviour
     {
         if(porcentaje == 100)
         {
-
+            rango = "S";
+            imagenRango.sprite = S;
         }
         else if(89 < porcentaje)
         {
-
+            rango = "A";
+            imagenRango.sprite = A;
         }
         else if (79 < porcentaje)
         {
-
+            rango = "B";
+            imagenRango.sprite = B;
         }
         else
         {
+            rango = "C";
+            imagenRango.sprite = C;
+        }
+        CancionTermina();
+    }
 
+    public void GuardarRango()
+    {
+        if(SceneManager.GetActiveScene().name == "Cancion1")
+        {
+            DataManager.instance.Rango1(rango);
+        }
+        if (SceneManager.GetActiveScene().name == "Cancion2")
+        {
+            DataManager.instance.Rango2(rango);
+        }
+        if (SceneManager.GetActiveScene().name == "Cancion3")
+        {
+            DataManager.instance.Rango3(rango);
         }
     }
 
@@ -192,5 +261,52 @@ public class GameManager : MonoBehaviour
     public void BotonRendirse()
     {
         SceneManager.LoadScene("Inicio");
+    }
+
+    public void CancionTermina()
+    {
+        inGame.SetActive(false);
+        isPlaying = false;
+        pjCont.active = false;
+        perfText.text = perfects.ToString();
+        goodText.text = goods.ToString();
+        normalText.text = normals.ToString();
+        missText.text = misses.ToString();
+        resultados.SetActive(true);
+    }
+
+    public void Comenzar()
+    {
+        inicio.SetActive(false);
+        inGame.SetActive(true);
+        startPlaying = true;
+        beatCont.hasStarted = true;
+        pjCont.active = true;
+        music.Play();
+    }
+
+    public void CargarCancion1()
+    {
+        SceneManager.LoadScene("Cancion1");
+    }
+    public void CargarCancion2()
+    {
+        SceneManager.LoadScene("Cancion2");
+    }
+    public void CargarCancion3()
+    {
+        SceneManager.LoadScene("Cancion3");
+    }
+
+    public void CargarFinal()
+    {
+        if((DataManager.instance.rango1 == "S" || DataManager.instance.rango1 == "A") && (DataManager.instance.rango2 == "S" || DataManager.instance.rango2 == "A") && (DataManager.instance.rango3 == "S" || DataManager.instance.rango3 == "A"))
+        {
+            SceneManager.LoadScene("Final1");
+        }
+        else
+        {
+            SceneManager.LoadScene("Final2");
+        }
     }
 }
