@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public KeyCode startKey;
+    public KeyCode startKey, optionsKey;
 
     public AudioSource music;
 
@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
         }
         if(isPlaying)
         {
-            if(Input.GetKeyDown(KeyCode.Escape))
+            if(Input.GetKeyDown("escape"))
             {
                 if (inOptions)
                 {
@@ -121,13 +121,15 @@ public class GameManager : MonoBehaviour
                     beatCont.hasStarted = true;
                     pjCont.active = true;
                     music.UnPause();
+                    inOptions = false;
                 }
-                if(!inOptions)
+                else if(!inOptions)
                 {
                     opciones.SetActive(true);
                     music.Pause();
                     beatCont.hasStarted = false;
                     pjCont.active = false;
+                    inOptions = true;
                 }
             }
         }
