@@ -216,17 +216,17 @@ public class GameManager : MonoBehaviour
 
     public void AjustPorcentaje()
     {
-        if(porcentaje == 100)
+        if(95 < porcentaje)
         {
             rango = "S";
             imagenRango.sprite = S;
         }
-        else if(89 < porcentaje)
+        else if(85 < porcentaje)
         {
             rango = "A";
             imagenRango.sprite = A;
         }
-        else if (79 < porcentaje)
+        else if (75 < porcentaje)
         {
             rango = "B";
             imagenRango.sprite = B;
