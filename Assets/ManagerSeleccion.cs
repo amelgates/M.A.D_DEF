@@ -10,6 +10,10 @@ public class ManagerSeleccion : MonoBehaviour
     {
         SceneManager.LoadScene("Cancion1");
     }
+    public void CargarTut()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
 
     public void Vicente()
     {
