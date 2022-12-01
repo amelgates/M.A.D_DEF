@@ -287,10 +287,6 @@ public class GameManager : MonoBehaviour
         music.Play();
     }
 
-    public void CargarCancion1()
-    {
-        SceneManager.LoadScene("Cancion1");
-    }
     public void CargarCancion2()
     {
         SceneManager.LoadScene("Cancion2");
