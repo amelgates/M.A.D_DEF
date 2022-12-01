@@ -421,10 +421,10 @@ MonoBehaviour:
   scoreText: {fileID: 323617040}
   multiText: {fileID: 79674241}
   comboText: {fileID: 1849995784}
-  perfText: {fileID: 0}
-  goodText: {fileID: 0}
-  normalText: {fileID: 0}
-  missText: {fileID: 0}
+  perfText: {fileID: 1086256077}
+  goodText: {fileID: 440160303}
+  normalText: {fileID: 334487299}
+  missText: {fileID: 1315397670}
 --- !u!4 &11265399
 Transform:
   m_ObjectHideFlags: 0
