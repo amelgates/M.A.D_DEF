@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public bool inOptions;
 
     public BeatController beatCont;
-    public PersonajeController pjCont1, pjCont2;
+    public PersonajeController pjCont;
     public static GameManager instance;
 
     public GameObject normalEffect, goodEffect, perfectEffect, missEffect, valeria, vicente, inicio, inGame, opciones, resultados, gameOver;
@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI perfText, goodText, normalText, missText;
     
     // Start is called before the first frame update
-    private void Start()
+    private void Awake()
     {
         inOptions = false;
         startPlaying = false;
@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score: 0";
         currentMultiplier = 1;
         multiplierTracker = 0;
-        SetPlayer();
+        
     }
     public void SetPlayer()
     {
@@ -119,8 +119,7 @@ public class GameManager : MonoBehaviour
                 {
                     opciones.SetActive(false);
                     beatCont.hasStarted = true;
-                    pjCont1.active = true;
-                    pjCont2.active = true;
+                    pjCont.active = true;
                     music.UnPause();
                     inOptions = false;
                 }
@@ -129,8 +128,7 @@ public class GameManager : MonoBehaviour
                     opciones.SetActive(true);
                     music.Pause();
                     beatCont.hasStarted = false;
-                    pjCont1.active = false;
-                    pjCont2.active = false;
+                    pjCont.active = false;
                     inOptions = true;
                 }
             }
@@ -143,8 +141,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         beatCont.hasStarted = false;
-        pjCont1.active = false;
-        pjCont2.active = false;
+        pjCont.active = false;
         music.Stop();
         isPlaying = false;
         gameOver.SetActive(true);
@@ -272,8 +269,7 @@ public class GameManager : MonoBehaviour
     {
         inGame.SetActive(false);
         isPlaying = false;
-        pjCont1.active = false;
-        pjCont2.active = false;
+        pjCont.active = false;
         perfText.text = perfects.ToString();
         goodText.text = goods.ToString();
         normalText.text = normals.ToString();
@@ -287,8 +283,7 @@ public class GameManager : MonoBehaviour
         inGame.SetActive(true);
         startPlaying = true;
         beatCont.hasStarted = true;
-        pjCont1.active = true;
-        pjCont2.active = true;
+        pjCont.active = true;
         music.Play();
     }
 
