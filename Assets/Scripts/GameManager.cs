@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     public PersonajeController pjCont;
     public static GameManager instance;
 
+    public GameObject normalEffect, goodEffect, perfectEffect, missEffect;
+
     public int currentScore;
     public int scorePerNote;
     public int scorePerGoodNote;
@@ -100,6 +102,7 @@ public class GameManager : MonoBehaviour
         notasReal += 0.8f;
         vida += 5;
         normals++;
+        Instantiate(normalEffect, normalEffect.transform.position, normalEffect.transform.rotation);
         NoteHit();
     }
 
@@ -110,6 +113,7 @@ public class GameManager : MonoBehaviour
         notasReal += 0.9f;
         vida += 10;
         goods++;
+        Instantiate(goodEffect, goodEffect.transform.position, goodEffect.transform.rotation);
         NoteHit();
     }
 
@@ -120,6 +124,7 @@ public class GameManager : MonoBehaviour
         notasReal++;
         vida += 15;
         perfects++;
+        Instantiate(perfectEffect, perfectEffect.transform.position, perfectEffect.transform.rotation);
         NoteHit();
     }
 
@@ -146,6 +151,7 @@ public class GameManager : MonoBehaviour
     public void NoteMissed()
     {
         Debug.Log("Hit Missed");
+        Instantiate(missEffect, missEffect.transform.position, missEffect.transform.rotation);
         vida -= 20;
         currentCombo = 0;
         currentMultiplier = 1;

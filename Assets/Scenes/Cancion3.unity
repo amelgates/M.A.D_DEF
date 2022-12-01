@@ -379,6 +379,10 @@ MonoBehaviour:
   startPlaying: 0
   beatCont: {fileID: 1250710792}
   pjCont: {fileID: 70756971}
+  normalEffect: {fileID: 5101180090137017341, guid: d8c2efe00f85ab84e9d73019582245e7, type: 3}
+  goodEffect: {fileID: 2581467725631011265, guid: 65e4941bf69f56e4b8573c6022b14ae3, type: 3}
+  perfectEffect: {fileID: 1753742885274453868, guid: 7fdd13d69cfaf5c4b9e09e82a7a40075, type: 3}
+  missEffect: {fileID: 2755553900831654117, guid: 1aef0514afc3d014fb9a5661b8a056aa, type: 3}
   currentScore: 0
   scorePerNote: 100
   scorePerGoodNote: 150
