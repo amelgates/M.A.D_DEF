@@ -17,12 +17,12 @@ public class NoteObject : MonoBehaviour
 
                 //GameManager.instance.NoteHit();
 
-                if(Mathf.Abs(transform.position.x) > 0.25f)
+                if(Mathf.Abs(transform.position.x) > 1.75f)
                 {
                     Debug.Log("Normal hit");
                     GameManager.instance.NormalHit();
                 }
-                else if(Mathf.Abs(transform.position.x) > 0.05f)
+                else if(Mathf.Abs(transform.position.x) > 1.6f)
                 {
                     Debug.Log("Good Hit");
                     GameManager.instance.GoodHit();
@@ -44,6 +44,7 @@ public class NoteObject : MonoBehaviour
         }
         if(other.tag == "Barrier")
         {
+            GameManager.instance.NoteMissed();
             gameObject.SetActive(false);
         }
     }

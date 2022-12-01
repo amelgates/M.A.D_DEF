@@ -26,6 +26,10 @@ public class GameManager : MonoBehaviour
     public float notasReal;
     public float porcentaje;
     public int currentCombo;
+    public int perfects;
+    public int goods;
+    public int normals;
+    public int misses;
 
     public Slider vidaSlider;
     public Slider duracionSlider;
@@ -41,6 +45,15 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        notasMaX = 0;
+        notasReal = 0;
+        perfects = 0;
+        goods = 0;
+        normals = 0;
+        misses = 0;
+        currentCombo = 0;
+        porcentaje = 100;
+        currentScore = 0;
         duracionSlider.maxValue = music.clip.length;
         duracionSlider.value = 0;
         instance = this;
@@ -54,7 +67,6 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         duracionSlider.value = music.time;
-        Debug.Log(music.time);
         vidaSlider.value = vida;
         if(vida > 100)
         {
@@ -85,8 +97,9 @@ public class GameManager : MonoBehaviour
     {
         currentScore += scorePerNote * currentMultiplier;
         notasMaX++;
-        notasReal += 0.5f;
+        notasReal += 0.8f;
         vida += 5;
+        normals++;
         NoteHit();
     }
 
@@ -94,8 +107,9 @@ public class GameManager : MonoBehaviour
     {
         currentScore += scorePerGoodNote * currentMultiplier;
         notasMaX++;
-        notasReal += 0.75f;
+        notasReal += 0.9f;
         vida += 10;
+        goods++;
         NoteHit();
     }
 
@@ -105,6 +119,7 @@ public class GameManager : MonoBehaviour
         notasMaX++;
         notasReal++;
         vida += 15;
+        perfects++;
         NoteHit();
     }
 
@@ -122,7 +137,7 @@ public class GameManager : MonoBehaviour
             }
         }
         currentCombo++;
-        porcentaje = Mathf.RoundToInt(notasReal / notasMaX) * 100;
+        porcentaje = Mathf.RoundToInt((notasReal / notasMaX) * 100);
         multiText.text = "Multiplier: " + currentMultiplier;
         scoreText.text = "Score: " + currentScore;
         comboText.text = "Combo: " + currentCombo;
@@ -136,6 +151,8 @@ public class GameManager : MonoBehaviour
         currentMultiplier = 1;
         multiplierTracker = 0;
         notasMaX++;
+        misses++;
+        porcentaje = Mathf.RoundToInt((notasReal / notasMaX) * 100);
         multiText.text = "Multiplier: " + currentMultiplier;
         comboText.text = "Combo: " + currentCombo;
     }
