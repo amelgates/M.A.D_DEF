@@ -18,8 +18,4 @@ public class Menudeinicio : MonoBehaviour
     {
         SceneManager.LoadScene("Creditos");
     }
-    public void BackGame()
-    {
-        SceneManager.LoadScene("Inicio");
-    }
 }
