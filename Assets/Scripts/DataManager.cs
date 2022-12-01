@@ -22,6 +22,11 @@ public class DataManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
+    public void Cargar1()
+    {
+        SceneManager.LoadScene("Cancion1");
+    }
+
     public void Vicente()
     {
         personaje = 1;
