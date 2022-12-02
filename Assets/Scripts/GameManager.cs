@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
         }
         if(isPlaying)
         {
-            if(Input.GetKeyDown("escape"))
+            if (Input.GetKeyDown("escape"))
             {
                 if (inOptions)
                 {
@@ -283,6 +283,7 @@ public class GameManager : MonoBehaviour
 
     public void Comenzar()
     {
+        isPlaying = true;
         inicio.SetActive(false);
         inGame.SetActive(true);
         startPlaying = true;
