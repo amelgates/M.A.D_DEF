@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 using UnityEngine.SceneManagement;
 
 public class ManagerSeleccion : MonoBehaviour
@@ -23,6 +22,10 @@ public class ManagerSeleccion : MonoBehaviour
     public void Valeria()
     {
         DataManager.instance.Valeria();
+    }
+    public void CreditsGame()
+    {
+        SceneManager.LoadScene("Creditos");
     }
 
 }
