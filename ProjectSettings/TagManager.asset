@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Activator
   - Barrier
+  - station1
+  - Station2
   layers:
   - Default
   - TransparentFX
