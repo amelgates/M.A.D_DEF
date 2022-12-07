@@ -8,6 +8,7 @@ TagManager:
   - Barrier
   - station1
   - Station2
+  - Limit
   layers:
   - Default
   - TransparentFX

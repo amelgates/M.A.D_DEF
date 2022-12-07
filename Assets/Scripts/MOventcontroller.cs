@@ -17,18 +17,18 @@ public class MOventcontroller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        //InvokeRepeating()
     }
+  
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("station1"))
         {
-            station1.transform.position = spawn.transform.position;
+            GameObject mapa = Instantiate(station1, new Vector3(684.4f, 185.7f, -4.84f), Quaternion.identity);
         }
         if (other.CompareTag("Station2"))
         {
-            station2.transform.position = spawn.transform.position;
+            GameObject mapa = Instantiate(station2, new Vector3(684.4f, 185.7f, -4.84f), Quaternion.identity);
         }
-
     }
 }

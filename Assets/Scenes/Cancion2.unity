@@ -12531,7 +12531,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6625748363725245998, guid: d08828051c6983e4fbffb59df4dac90d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -232
+      value: -198.2
       objectReference: {fileID: 0}
     - target: {fileID: 6625748363725245998, guid: d08828051c6983e4fbffb59df4dac90d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14333,6 +14333,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7367464090842477134, guid: ea8bc0fd551fcc84dbe2f39f84c8c94c, type: 3}
+      propertyPath: m_Size.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7367464090842477134, guid: ea8bc0fd551fcc84dbe2f39f84c8c94c, type: 3}
+      propertyPath: m_Size.y
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7367464090842477134, guid: ea8bc0fd551fcc84dbe2f39f84c8c94c, type: 3}
+      propertyPath: m_Size.z
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -7367464090842477134, guid: ea8bc0fd551fcc84dbe2f39f84c8c94c, type: 3}
+      propertyPath: m_Center.x
+      value: -693
+      objectReference: {fileID: 0}
+    - target: {fileID: -7367464090842477134, guid: ea8bc0fd551fcc84dbe2f39f84c8c94c, type: 3}
+      propertyPath: m_Center.y
+      value: -183
+      objectReference: {fileID: 0}
+    - target: {fileID: -7367464090842477134, guid: ea8bc0fd551fcc84dbe2f39f84c8c94c, type: 3}
+      propertyPath: m_Center.z
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 3640510911600113562, guid: ea8bc0fd551fcc84dbe2f39f84c8c94c, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -14802,6 +14826,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6007627292702945666, guid: 5f5e11ec04013a34e8f372cd5545ef23, type: 3}
+      propertyPath: m_Size.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6007627292702945666, guid: 5f5e11ec04013a34e8f372cd5545ef23, type: 3}
+      propertyPath: m_Size.y
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -6007627292702945666, guid: 5f5e11ec04013a34e8f372cd5545ef23, type: 3}
+      propertyPath: m_Size.z
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -6007627292702945666, guid: 5f5e11ec04013a34e8f372cd5545ef23, type: 3}
+      propertyPath: m_Center.x
+      value: -688.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -6007627292702945666, guid: 5f5e11ec04013a34e8f372cd5545ef23, type: 3}
+      propertyPath: m_Center.y
+      value: -175.8
+      objectReference: {fileID: 0}
+    - target: {fileID: -6007627292702945666, guid: 5f5e11ec04013a34e8f372cd5545ef23, type: 3}
+      propertyPath: m_Center.z
+      value: 23.9
+      objectReference: {fileID: 0}
     - target: {fileID: 3008452050527946872, guid: 5f5e11ec04013a34e8f372cd5545ef23, type: 3}
       propertyPath: m_Name
       value: estacion (1)

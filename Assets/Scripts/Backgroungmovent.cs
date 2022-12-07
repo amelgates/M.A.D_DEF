@@ -25,6 +25,13 @@ public class Backgroungmovent : MonoBehaviour
         {
             transform.Translate(Vector3.left * 0.0f * Time.deltaTime);
         }
-
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Limit"))
+        {
+            Destroy(this.gameObject);
+            Debug.Log("destruyeme esta");
+        }
     }
 }
