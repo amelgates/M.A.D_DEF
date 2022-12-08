@@ -15,23 +15,18 @@ public class Backgroungmovent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.instance.isPlaying == true)
+        if(GameManager.instance.isPlaying == true)
         {
+            if (GameManager.instance.inOptions == false)
+            {
 
-            transform.Translate(Vector3.left * speed * Time.deltaTime);
-        }
+                transform.Translate(Vector3.left * speed * Time.deltaTime);
+            }
 
-        else if (!GameManager.instance.isPlaying == true)
-        {
-            transform.Translate(Vector3.left * 0.0f * Time.deltaTime);
-        }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Limit"))
-        {
-            Destroy(this.gameObject);
-            Debug.Log("destruyeme esta");
+            else if (!GameManager.instance.inOptions == false)
+            {
+                transform.Translate(Vector3.left * 0.0f * Time.deltaTime);
+            }
         }
     }
 }
