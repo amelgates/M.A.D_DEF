@@ -24,11 +24,11 @@ public class MOventcontroller : MonoBehaviour
     {
         if (other.CompareTag("station1"))
         {
-            GameObject mapa = Instantiate(station1, new Vector3(684.4f, 185.7f, -4.84f), Quaternion.identity);
+            GameObject mapa = Instantiate(station1, new Vector3(780f, 185.7f, -4.84f), Quaternion.identity);
         }
         if (other.CompareTag("Station2"))
         {
-            GameObject mapa = Instantiate(station2, new Vector3(684.4f, 185.7f, -4.84f), Quaternion.identity);
+            GameObject mapa = Instantiate(station2, new Vector3(780f, 185.7f, -4.84f), Quaternion.identity);
         }
     }
 }
