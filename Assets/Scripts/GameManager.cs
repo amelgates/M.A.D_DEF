@@ -304,9 +304,15 @@ public class GameManager : MonoBehaviour
 
     public void CargarFinal()
     {
-        if((DataManager.instance.rango1 == "S" || DataManager.instance.rango1 == "A") && (DataManager.instance.rango2 == "S" || DataManager.instance.rango2 == "A") && (DataManager.instance.rango3 == "S" || DataManager.instance.rango3 == "A"))
+        if(DataManager.instance.rango1 == "S")
         {
-            SceneManager.LoadScene("Final1");
+            if(DataManager.instance.rango2 == "S")
+            {
+                if(DataManager.instance.rango3 == "S")
+                {
+                    SceneManager.LoadScene("Final1");
+                }
+            }
         }
         else
         {
