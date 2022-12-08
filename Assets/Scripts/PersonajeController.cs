@@ -11,6 +11,8 @@ public class PersonajeController : MonoBehaviour
     public Transform playerTransform;
     public bool active;
     public Animator animator;
+    public Sprite arriba, abajo, medio;
+    public SpriteRenderer indicador;
 
     // Start is called before the first frame update
     void Start()
@@ -51,12 +53,15 @@ public class PersonajeController : MonoBehaviour
             {
                 case 1:
                     playerTransform.position = estado1;
+                    indicador.sprite = abajo;
                     break;
                 case 2:
                     playerTransform.position = estado2;
+                    indicador.sprite = medio;
                     break;
                 case 3:
                     playerTransform.position = estado3;
+                    indicador.sprite = arriba;
                     break;
             }
         }
