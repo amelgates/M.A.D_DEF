@@ -3472,7 +3472,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &89648925
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28074,7 +28074,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1026524560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43320,8 +43320,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: desactivar guia
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1c71d378a1e822441b7af07618d4ef9a, type: 2}
-  m_sharedMaterial: {fileID: 2531849338980157549, guid: 1c71d378a1e822441b7af07618d4ef9a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
+  m_sharedMaterial: {fileID: -1547564174838123639, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -43345,8 +43345,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -44427,8 +44427,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Rendirse
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1c71d378a1e822441b7af07618d4ef9a, type: 2}
-  m_sharedMaterial: {fileID: 2531849338980157549, guid: 1c71d378a1e822441b7af07618d4ef9a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
+  m_sharedMaterial: {fileID: -1547564174838123639, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -44452,8 +44452,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
