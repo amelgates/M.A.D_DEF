@@ -2107,7 +2107,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: quisas en otra linea sepan como escapar y no necesitemos ganarle a todas.
+  m_text: quizas en otra linea sepan como escapar y no necesitemos ganarle a todas.
     bueno igual tenemos que ir a la proxima
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}

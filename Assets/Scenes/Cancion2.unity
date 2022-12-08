@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11849,7 +11849,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 123
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
   m_sharedMaterial: {fileID: -1547564174838123639, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
@@ -22969,7 +22969,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Combo: '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -23033,7 +23033,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &825053492
@@ -31409,7 +31409,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 123
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
   m_sharedMaterial: {fileID: -1547564174838123639, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
@@ -34140,7 +34140,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Multiplier: '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -34204,7 +34204,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1232439771
@@ -37274,7 +37274,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 123
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
   m_sharedMaterial: {fileID: -1547564174838123639, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
@@ -39184,7 +39184,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: activar guia
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1c71d378a1e822441b7af07618d4ef9a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
   m_sharedMaterial: {fileID: 2531849338980157549, guid: 1c71d378a1e822441b7af07618d4ef9a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -39248,7 +39248,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1408092622
@@ -42266,7 +42266,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 123
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
   m_sharedMaterial: {fileID: -1547564174838123639, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
@@ -43809,7 +43809,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Score: '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -43873,7 +43873,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1572771576
@@ -51276,7 +51276,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 11265398}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: BotonRendirse
         m_Mode: 1
@@ -56843,7 +56843,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: af4c38c0bbc510749848d7d0bc288d98, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b74012a005c0d0f459dce7080037b35d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -58320,6 +58320,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 9018106704295584663, guid: 735f97b1951e6b44287ab9a319cba802, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
+    - target: {fileID: 9018106704295584663, guid: 735f97b1951e6b44287ab9a319cba802, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1547564174838123639, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
     - target: {fileID: 9018106704378628265, guid: 735f97b1951e6b44287ab9a319cba802, type: 3}
       propertyPath: m_Name
       value: GameOver
@@ -58412,5 +58420,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9018106704559718851, guid: 735f97b1951e6b44287ab9a319cba802, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11265398}
+    - target: {fileID: 9018106704559718851, guid: 735f97b1951e6b44287ab9a319cba802, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetEscena
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018106704559718851, guid: 735f97b1951e6b44287ab9a319cba802, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018106704559718851, guid: 735f97b1951e6b44287ab9a319cba802, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018106705592467781, guid: 735f97b1951e6b44287ab9a319cba802, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018106705592467781, guid: 735f97b1951e6b44287ab9a319cba802, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018106705592467781, guid: 735f97b1951e6b44287ab9a319cba802, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11265398}
+    - target: {fileID: 9018106705592467781, guid: 735f97b1951e6b44287ab9a319cba802, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018106705592467781, guid: 735f97b1951e6b44287ab9a319cba802, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: BotonRendirse
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018106705592467781, guid: 735f97b1951e6b44287ab9a319cba802, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018106705592467781, guid: 735f97b1951e6b44287ab9a319cba802, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9018106705962973288, guid: 735f97b1951e6b44287ab9a319cba802, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
+    - target: {fileID: 9018106705962973288, guid: 735f97b1951e6b44287ab9a319cba802, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1547564174838123639, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 735f97b1951e6b44287ab9a319cba802, type: 3}

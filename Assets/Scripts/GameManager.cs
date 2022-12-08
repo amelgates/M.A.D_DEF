@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public KeyCode startKey, optionsKey;
+    public KeyCode startKey;
 
     public AudioSource music;
 

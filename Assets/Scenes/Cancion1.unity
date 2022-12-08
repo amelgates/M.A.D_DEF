@@ -8085,7 +8085,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 123
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
   m_sharedMaterial: {fileID: -1547564174838123639, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
@@ -22254,7 +22254,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 123
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
   m_sharedMaterial: {fileID: -1547564174838123639, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
@@ -27040,7 +27040,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 123
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
   m_sharedMaterial: {fileID: -1547564174838123639, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
@@ -29267,7 +29267,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 123
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
   m_sharedMaterial: {fileID: -1547564174838123639, guid: 5d8b858c27fb2d449a52f394460d53ff, type: 2}
@@ -36916,7 +36916,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a51e31ff8ca4e0a47aaad086a2a39449, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6152af37fc2858441933168e031ac275, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
