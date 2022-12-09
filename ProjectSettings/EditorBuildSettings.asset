@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Estacion2.unity
     guid: 424a8d84dbadee14aa1fd24d761ca670
+  - enabled: 1
+    path: Assets/Scenes/Video1.unity
+    guid: eb03165f4f67de643a21ca3760e5431a
   m_configObjects: {}

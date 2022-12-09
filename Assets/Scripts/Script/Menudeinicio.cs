@@ -7,7 +7,7 @@ public class Menudeinicio : MonoBehaviour
 {
      public void StartGame()
     {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Video1");
     }
      public void ExitButton()
     {
